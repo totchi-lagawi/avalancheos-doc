@@ -1,21 +1,32 @@
 # The theory of five
-*Disclaimer : this is just a draft. It is unclear, messy, and may change.*
+*Disclaimer : this is just a draft. It is unclear, messy, and may change. Do not take anything in it as it.*
 
 
 ## Introduction
-Many current programs are complicated, disorganised, and bloated : Windows with its performance and bloat issues, Minecraft with its performance and flexibility issues, macOS with its security issues... All of this makes creation of good software is hard, since there's no widely-known universal guidelines that provide a way to create good software. This page proposes five criteria, which every good software should respect. By opposition, it is also possible to check the quality of a software based on those. We will start by describing quickly the criteria, then we will examine them in details.
-> In today's digital landscape, many software applications are characterized by complexity, disorganization, and excessive resource consumption. Examples include Windows, which often grapples with performance and bloat issues; Minecraft, which faces challenges related to performance and flexibility; and macOS, which has been criticized for security vulnerabilities. These factors complicate the development of high-quality software, as there are no universally accepted guidelines to ensure excellence in software design. This paper proposes five essential criteria that every effective software application should meet: Security, Speed, Simplicity, Flexibility, and Maintainability. By evaluating software against these criteria, developers can assess its quality and identify areas for improvement. We will begin by briefly outlining each criterion before delving into a detailed examination of their significance and implications.
->
->*Revised version, by ChatGPT*
+Today's software programs tend to be overcomplicated, inefficient, and unsecure. There are examples : macOS, which was vastly critisized for its bugs and security breaches, Windows, which is known for its slowness, security problems, and overcomplicated architecture, Minecraft, which has huge performance issues... To only name a few. They are, however, well-etablished software that is used all across the world. How is it possible to determine the quality of a software? This paper proposes five criteria, which determine the necessary qualities of good software.
 
 ## The five criteria
-These are :
+These criteria are :
 * Security
 * Speed
 * Simplicity
 * Flexibility
 * [FIXME: I forgot...]
 
-**TODO : add definitions of these critera, and provide examples**
+They are listed by importance, from the most important to the least. Security is, of course, placed first. Speed follows, and that, because it matters more than what could be though. Effectively, inefficient software not only take more time to complete execution, it also holds resources which could have been given to other tasks, which may be more important. Furthermore, efficient software tends to work more easily on old or low-end software, making software efficiency fights planned obsolescence. Simplicity come from a well-known proverb from the \*NIX world : KISS (Keep It Simple, Stupid). Simplicity in software is directly related to our human nature : it is a lot easier to program well-organized and simple software than overcomplicated ones, with a very complicated architecture. Also, security problems and bugs tend to be more easily fixed on a simple program than on a very complicated one... However, some programs *do* need complex architecture : but in that case, the program is complex, and not complicated. Flexibility is harder to define. It means that software should use as much universal and general systems as possible, and avoid using any unnecessary systems. Each of them will be described in details below.
 
-Security is important for evident reasons ; speed is more than what could be though : effectively, inefficient software does work, but it holds a machine's resources which could be dedicated to other tasks, and sometimes for a lot of time. Furthermore, efficient software tends to work on old or low-end hardware without too many problems, which fights planned obsolescence. Therefore, while a small software running slow is not extremely given it has some importance - let's say, for example, a game -, it may make the user buy new hardware to make it run smoother, while this new hardware could have been avoided if the software was well-made. Simplicity simply makes programming easier : it is always easier to contribute to a project that you fully understand than a project that you only barely do. Also, it reduces the risks of security problems and bugs, by making code easier to analyse by humans. Be that as it may, as the KISS principle said, something simple but that works is always more impressive than something complicated but that doesn't work. Flexibility is a bit harder to catch. It means avoiding any specification, and advocates reusability and making things generic. It will be further described below.
+## In details
+### Security
+TODO
+
+### Speed
+TODO
+
+## Simplicity
+TODO
+
+## Flexibility
+TODO
+
+## [FIXME: I forgot...]
+TODO
