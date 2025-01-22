@@ -1,0 +1,2 @@
+# Kernel
+Well, since I haven't enough knowneldge about kernels, I am not able to describe how the kernel of AvalancheOS will look like. However, I know that I want to make it modular : the allocator, the scheduler, the VFS interface, the network interface... will be a module, that can be removed or replaced by another implementation. Well, actually, this also exists in "traditional" kernels like Linux, since this behaviour can be achieved by recompiling the kernel, but I'd like to replace static linking with dynamic linking, at the cost of extra loading time overhead.
