@@ -52,7 +52,7 @@ com.kitware.cmake = 3.31.4
 # Which depends on rustc, etc.
 org.rust-lang.cargo = 1.84.0
 
-[Libraires]
+[Libraries]
 libc = {
     version = 2.3,
     # NOTE

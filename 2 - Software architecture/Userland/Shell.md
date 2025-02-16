@@ -1,0 +1,1 @@
+The shell is an interface, just like a GUI. It is not just plaintext, it is *structured*. Possible arguments are directly embedded in the executables, multiple entry points are possible, and output is kept in tables. For example, for `ls`, the output is a table with the `name`, `size`, `type` and so on fields. A lot of inspiration is taken from [nushell](https://www.nushell.sh/).

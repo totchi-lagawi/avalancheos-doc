@@ -1,2 +1,5 @@
 # Kernel
 Well, since I haven't enough knowneldge about kernels, I am not able to describe how the kernel of AvalancheOS will look like. However, I know that I want to make it modular : the allocator, the scheduler, the VFS interface, the network interface... will be a module, that can be removed or replaced by another implementation. Well, actually, this also exists in "traditional" kernels like Linux, since this behaviour can be achieved by recompiling the kernel, but I'd like to replace static linking with dynamic linking, at the cost of extra loading time overhead.
+
+New :\
+AvalancheOS' kernel will be an exokernel, having the bare minimum for it to work, and being extended by *modules*. There are two types of modules : an abstraction module, answering the what, and a driver module, answering the how. These modules are just libraries, e.g. `.so` files on Linux. The kernel can be reused in any other operating system, with maximum flexibility, but AvalancheOS defines some abstraction that can be expected to be present in any AvalancheOS system.
