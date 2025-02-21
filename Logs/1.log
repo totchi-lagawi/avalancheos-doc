@@ -1,0 +1,42 @@
+totchi@TotchiComputer:~> echo Hello world!
+Hello world!
+
+totchi@TotchiComputer:~> echo I am right now showing you some things about AvalancheOS
+I am right now showing you some things about AvalancheOS
+
+totchi@TotchiComputer:~> ls /
+╭───┬───────────────┬──────┬────────╮
+│ # │     name      │ type │  size  │
+├───┼───────────────┼──────┼────────┤
+│ 0 │ Binaries      │ dir  │ 4.0 kB │
+│ 1 │ Configuration │ dir  │ 4.0 kB │
+│ 2 │ Libraries     │ dir  │ 4.0 kB │
+│ 3 │ Packages      │ dir  │ 4.0 kB │
+│ 4 │ System        │ dir  │ 4.0 kB │
+│ 5 │ Users         │ dir  │ 4.0 kB │
+╰───┴───────────────┴──────┴────────╯
+
+totchi@TotchiComputer:~> ls /System
+╭───┬───────────┬──────┬────────╮
+│ # │   name    │ type │  size  │
+├───┼───────────┼──────┼────────┤
+│ 0 │ Binaries  │ dir  │ 4.0 kB │
+│ 1 │ Boot      │ dir  │ 4.0 kB │
+│ 2 │ Devices   │ dir  │ 4.0 kB │
+│ 3 │ Libraries │ dir  │ 4.0 kB │
+│ 4 │ Packages  │ dir  │ 4.0 kB │
+│ 5 │ Root      │ dir  │ 4.0 kB │
+╰───┴───────────┴──────┴────────╯
+
+totchi@TotchiComputer:~> echo $env.os.name
+AvalancheOS
+
+totchi@TotchiComputer:~> echo $env.os.version
+AvalancheOS beta 1
+
+
+
+
+
+
+totchi@TotchiComputer:~> 

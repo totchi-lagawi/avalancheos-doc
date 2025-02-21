@@ -1,0 +1,92 @@
+totchi@TotchiComputer:~> help apm
+apm - Manage packages simply and efficiently
+
+Syntax : apm <command>
+
+Commands :
+- list : list packages
+- search : browse the available packages
+- show : show informations about a packages
+- install : install a package
+- remove : remove a package
+- upgrade : upgrade all packages, or a specific one
+
+totchi@TotchiComputer:~> help apm | get commands
+╭─────────┬─────────────────────────────────────────╮
+│ list    │ list packages                           │
+│ search  │ browse the available packages           │
+│ show    │ show informations about a packages      │
+│ install │ install a package                       │
+│ remove  │ remove a package                        │
+│ upgrade │ upgrade all packages, or a specific one │
+╰─────────┴─────────────────────────────────────────╯
+
+totchi@TotchiComputer:~> apm show prismlauncher
+Prism Launcher - Discover, manage and play Minecraft instances
+
+Prism Launcher is a custom launcher for Minecraft that was forked from MultiMC.
+It allows the creation, and management of multiple installations of the game,
+or "instances" rather, each having their own separate mods, resource packs,
+settings, and more.
+
+Home page : https://prismlauncher.org
+Identifier : org.prismlauncher.prismlauncher
+Latest version : 9.2
+Size : 87,1 MB
+Dependencies : 3 (~ 7MB)
+Permissions : 7 (2 dangerous)
+
+totchi@TotchiComputer:~> help apm install
+apm install - Install a package
+
+Syntax : apm install [parameters] <package>
+
+Parameters :
+- --reinstall : reinstall the package if it was already installed
+- --build : build the package instead of downloading a precompiled archive
+- --all-users : install the package for all users
+- --prefix : install the package in the following location
+
+totchi@TotchiComputer:~> apm install --all-users prismlauncher
+Selecting "org.prismlauncher.prismlauncher" from "prismlauncher"
+
+This package has the following permissions :
+- Graphics
+1. Showing windows
+- Network
+2. Full access to the network
+
+Type i <number> to have more infos about a permission
+Type d <number> to deny a permission
+Type a to accept the selected permissions
+Type here : a
+
+Dependencies :
+- libc (provided by org.libc.musl, 2.40) - installed
+- libbz2 (provided by org.sourceware.libbz2, 1.0) - 70 kB
+- libcrypto (provided by com.cryptopp.libcrypto 1.1) - installed
+
+Summary :
+- To install : 2
+- Download size : 50 MB
+- Disk size : 88 MB
+
+Do you wish to continue [Y/N]? Y
+
+Downloading org.sourceware.libbz2 : 100%
+Downloading org.prismlauncher.prismlauncher : 100%
+
+Installing org.sourceware.libbz2 : 100%
+Installing org.prismlauncher.prismlauncher : 100%
+
+Installed prismlauncher, it is now available using "prismlauncher"
+
+totchi@TotchiComputer:~> apm show org.prismlauncher.prismlauncher build
+Build dependencies : cmake, make, gcc, libc
+
+Actions :
+- cmake --prepare
+- make
+
+Files :
+- / : /build
