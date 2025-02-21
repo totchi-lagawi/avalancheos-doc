@@ -69,7 +69,7 @@ actions = [
 [Package]
 files = {
     "/" = "/build",
-    # Would that be automatically added?
+    # Would that be automatically added? - Yes
     "/package.toml" = "/package.toml",
     "/permissions.toml" = "/permissions.toml"
 }
