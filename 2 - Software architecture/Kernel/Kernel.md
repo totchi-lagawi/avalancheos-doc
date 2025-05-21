@@ -1,5 +1,17 @@
 # Kernel
-Well, since I haven't enough knowneldge about kernels, I am not able to describe how the kernel of AvalancheOS will look like. However, I know that I want to make it modular : the allocator, the scheduler, the VFS interface, the network interface... will be a module, that can be removed or replaced by another implementation. Well, actually, this also exists in "traditional" kernels like Linux, since this behaviour can be achieved by recompiling the kernel, but I'd like to replace static linking with dynamic linking, at the cost of extra loading time overhead.
+*AvalancheOS's kernel will be a separate project.*
+The base kernel is itself as barebone as possible : just a simple module handling system. Every functionnalities are added by modules. Here's how it works :
 
-New :\
-AvalancheOS' kernel will be an exokernel, having the bare minimum for it to work, and being extended by *modules*. There are two types of modules : an abstraction module, answering the what, and a driver module, answering the how. These modules are just libraries, e.g. `.so` files on Linux. The kernel can be reused in any other operating system, with maximum flexibility, but AvalancheOS defines some abstraction that can be expected to be present in any AvalancheOS system.
+There are two categories of modules :
+- Interface
+- Implementation
+
+Interface modules just specify what system calls it adds, and what parameters there are. They are extremely simple.
+
+Implementation modules are what is called a driver, they implement the interfaces. At least one implementation module must be loaded in order to activate an interface. Implementation modules may depend on other interfaces, but not on any other implementations. They may also depend on some hardware features.
+
+# Boot process
+The base kernel hard-linked with the module loader is first loaded with the UUID of System partition and the UUID of the User partition, along with a simple `tmpfs` containing the modules to load. When the kernel is executed, it calls the module loader, which will parse the `tmpfs` to get all the modules to load, and calls the kernel each time it shoud load a module. Then, a tiny module depending on filesystems will mount the System and User partitions, and will call the System Manager, with Process ID 0. From now, the System Manager will load every userspace services.
+
+# Some notes
+Some services which are in other operating systems running as userspace programs may be runned as kernel modules. However, if a module can, it will be ran at ring 3.

@@ -1,0 +1,1 @@
+Basically like `systemd`, also the only process to have full access to all the interfaces of the kernel.

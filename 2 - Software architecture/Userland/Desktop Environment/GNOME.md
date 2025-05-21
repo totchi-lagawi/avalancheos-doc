@@ -1,0 +1,1 @@
+Installable. But well, JavaScript for extensions???

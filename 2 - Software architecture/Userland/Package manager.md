@@ -13,6 +13,7 @@ Languages = ["en", "fr", "es", "(...)"]
 [Dependencies]
 libc = 2.3
 
+# To reconsider
 [Entry Points]
 main = "/firefox"
 private_window = {
@@ -52,6 +53,7 @@ com.kitware.cmake = 3.31.4
 # Which depends on rustc, etc.
 org.rust-lang.cargo = 1.84.0
 
+# Wait this is a build dependency
 [Libraries]
 libc = {
     version = 2.3,
@@ -74,3 +76,7 @@ files = {
     "/permissions.toml" = "/permissions.toml"
 }
 ```
+
+For convenience, Arch Linux's PKGBUILD files will be translatable to AvalancheOS's build system format, providing huge software support.
+
+Also, bundles are possible, putting a program will all of its dependencies (except the one part of a basic AvalancheOS installation, also supports other environments like Ubuntu and Windows, because yes this is usable on other operating systems).

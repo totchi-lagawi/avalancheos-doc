@@ -1,0 +1,1 @@
+Also installable. KDE mafia's, here I come!
