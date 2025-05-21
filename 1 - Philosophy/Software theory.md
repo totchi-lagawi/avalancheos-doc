@@ -1,32 +1,35 @@
-# The theory of five
-*Disclaimer : this is just a draft. It is unclear, messy, and may change. Do not take anything in it as it.*
+# Is this software *the* best software for this?
+This is the most important question to ask ourselves when looking for a software to do something, or when making a software to do something. I'll get rid of any case-specific goals, to focus on general ones. We can list a few things :
+- Speed, because we want it to go as fast as possible
+- Security, because we do not want our computer to be hacked
+- Flexibility, because the environment of the software may change over time and we don't want that to break it
+- Simplicity, because we do not want to spend hours trying to figure out how to use the software
 
+These, are the base goals that should be reached by any software.
 
-## Introduction
-Today's software programs tend to be overcomplicated, inefficient, and unsecure. There are examples : macOS, which was vastly critisized for its bugs and security breaches, Windows, which is known for its slowness, security problems, and overcomplicated architecture, Minecraft, which has huge performance issues... To only name a few. They are, however, well-etablished software that is used all across the world. How is it possible to determine the quality of a software? This paper proposes five criteria, which determine the necessary qualities of good software.
+## Speed
+Until we find out how to get infinite compute power, speed will matter, for three reasons :
+- Support for lower-end computers
+- Using less resources, so less electricity used and more time for other softwares to run
+- Being happy because things go quickly (a slow software is an incredible workflow breaker)
 
-## The five criteria
-These criteria are :
-* Security
-* Speed
-* Simplicity
-* Flexibility
-* [FIXME: I forgot...]
-
-They are listed by importance, from the most important to the least. Security is, of course, placed first. Speed follows, and that, because it matters more than what could be though. Effectively, inefficient software not only take more time to complete execution, it also holds resources which could have been given to other tasks, which may be more important. Furthermore, efficient software tends to work more easily on old or low-end software, making software efficiency fights planned obsolescence. Simplicity come from a well-known proverb from the \*NIX world : KISS (Keep It Simple, Stupid). Simplicity in software is directly related to our human nature : it is a lot easier to program well-organized and simple software than overcomplicated ones, with a very complicated architecture. Also, security problems and bugs tend to be more easily fixed on a simple program than on a very complicated one... However, some programs *do* need complex architecture : but in that case, the program is complex, and not complicated. Flexibility is harder to define. It means that software should use as much universal and general systems as possible, and avoid using any unnecessary systems. Each of them will be described in details below.
-
-## In details
-### Security
-TODO
-
-### Speed
-TODO
-
-## Simplicity
-TODO
+## Security
+This concern is so important that there is a whole branch of informatic dedicated to it. This is why it *must* be achieved.
 
 ## Flexibility
-TODO
+This is mostly to allow the software to run correctly, even outside of its expected environment, which may mean just changing the name of a few folders, to the location of the libraries and executables, to the running services, to even the running kernel. The more flexible a software it, the more users it can be used by and the longer it will work on modern environment.
+It also means an other thing, which is allowing users to do whatever they want with the software, not having the software telling them what they can and what they can't do. To clarify, here a some examples :
+- Enforcing strict naming conventions for variables in a programming language - OK
+- Requiring the presence of Google Play Services for a simple calculator - NOT OK
+- Warning a lot the user about how dangerous modifing an essential file is - OK
+- Preventing the user to modify an essential system file without any way to bypass it - NOT OK (except in some situations, when the user do not own the device, like a corporate computer)
 
-## [FIXME: I forgot...]
-TODO
+## Simplicity
+We are humans, and as humans we also do not have infinite compute power. This is why the closer the software is from what we are used to do, so the simpler it is, the quicker we can use it to enjoy it. The only objection I found to this, is making finding security problems harder, but this also means that the software may be insecure, plus it also prevent "grey hats" to find security problems to report them by themselves.
+
+# Order of importance
+Not all of these are as important as the others, this is why some can be sacrificed to achieve a more important goal. These are what I found to be the most important :
+1. Security
+2. Speed
+3. Simplicity
+4. Flexibility
